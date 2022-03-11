@@ -88,8 +88,7 @@ export const getBrandNames = (brands) => {return Object.keys(brands)}
 // INPUT: brands from data.js
 // OUTPUT: total number of sneaker types across all brands (14)
 export const totalSneakerCount = (brands) => {
-  return 
-  // return brands.Nike.shoes.length + brands.Puma.shoes.length + brands.Adidas.shoes.length;
+  return brands.Nike.shoes.length + brands.Puma.shoes.length + brands.Adidas.shoes.length;
 }
 
 // INPUT: An object
@@ -99,6 +98,6 @@ export const totalSneakerCount = (brands) => {
 // convertToArray({}) => []
 // Source: https://edabit.com/challenge/pPNAs5PvB3WvnDwDM
 
-export const convertToArray = () => {}
+export const convertToArray = (object) => {return Object.entries(object)}
 
 //
